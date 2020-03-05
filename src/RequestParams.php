@@ -13,7 +13,7 @@ class RequestParams
     public static function fromRequest(Request $request): AttributeBag
     {
         $requestParams = new AttributeBag();
-        $requestParams->set('filters', json_decode($request->get('filters', ''), true) ?? []);
+        $requestParams->set('filters', json_decode($request->get('filters', ''), true, 512, JSON_THROW_ON_ERROR) ?? []);
 
         $sortBy = $request->get('sortBy');
         $requestParams->set(
