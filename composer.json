@@ -25,6 +25,7 @@
     "require": {
         "php": "^7.3",
         "ext-json": "*",
+        "phpspec/prophecy": "^1.10",
         "symfony/http-foundation": "^5.0"
     },
     "require-dev": {

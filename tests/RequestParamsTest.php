@@ -8,7 +8,7 @@ use Prophecy\Argument;
 use Prophecy\Prophet;
 use Symfony\Component\HttpFoundation\Request;
 
-class RequestParamsProphecyTest extends TestCase
+class RequestParamsTest extends TestCase
 {
     private $request;
 
